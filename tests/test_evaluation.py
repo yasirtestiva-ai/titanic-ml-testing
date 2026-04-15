@@ -13,7 +13,7 @@ model = joblib.load("model/model.pkl")
 y_actual = df["Actual"]
 y_pred = df["Predicted"]
 
-# Helper: preprocess Titanic data (reuse everywhere)
+#  preprocess Titanic data
 def preprocess():
     raw = pd.read_csv("data/Titanic.csv")
     raw = raw.drop(columns=["PassengerId", "Name", "Ticket", "Cabin"])

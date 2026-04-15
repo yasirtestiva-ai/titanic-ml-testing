@@ -42,7 +42,7 @@ def test_regression():
 
     new_preds = model.predict(X_test)
 
-    match_rate = np.mean(old_preds == new_preds)
+    match_rate = np.mean(old_preds == new_preds)  
     assert match_rate >= 0.90
 
 
